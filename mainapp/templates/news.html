@@ -1,0 +1,178 @@
+{% extends 'mainapp/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Новости</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="container">
+              <div class="first-block">
+                  <img
+                    src="https://i-store.by/blog/wp-content/uploads/2023/09/ios-17-i-Sore-1-600x500.png"
+                    class="img_news"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <li class="list_item">
+                    <span class="item"
+                      ><span data-text="iPhone">iPhone</span></span
+                    >
+                  </li>
+                  <li class="list_item">
+                    <span class="item"
+                      ><span data-text="Новости">Новости</span></span
+                    >
+                  </li>
+                  <li class="list_item">
+                    <span class="item"
+                      ><span data-text="Обзоры">Обзоры</span></span
+                    >
+                  </li>
+                  <li class="list_item">
+                    <span class="item"
+                      ><span data-text="Пресс-релизы">Пресс-релизы</span></span
+                    >
+                  </li>
+              </div>
+            <div class="content_blocks">
+              <div class="content_img">
+                 <a
+                    href="https://i-store.by/blog/apple-watch-series-9-i-apple-watch-ultra-2-s-novoj-funktsiej-double-tap/"
+                  >
+                    <img
+                      width="320"
+                      height="200"
+                      src="https://i-store.by/blog/wp-content/uploads/2023/09/apple-watch-9-i-Store-4-320x200.jpg"
+                      class="post-image"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </a>
+              </div>
+               <div class="content_text">
+                <div class="post-cat-list">
+                      <a
+                        class="hover-flip-item-wrapper"
+                        href="https://i-store.by/blog/category/obzory/watch/"
+                      >
+                        <span class="hover-flip-item"
+                          ><span data-text="Watch">Watch</span></span
+                        >
+                      </a>
+                      <a
+                        class="hover-flip-item-wrapper"
+                        href="https://i-store.by/blog/category/bez-rubriki/"
+                      >
+                        <span class="hover-flip-item"
+                          ><span data-text="Без рубрики"
+                            >Без рубрики</span
+                          ></span
+                        >
+                      </a>
+                      <a
+                        class="hover-flip-item-wrapper"
+                        href="https://i-store.by/blog/category/novosti/"
+                      >
+                        <span class="hover-flip-item"
+                          ><span data-text="Новости">Новости</span></span
+                        >
+                      </a>
+                      <a
+                        class="hover-flip-item-wrapper"
+                        href="https://i-store.by/blog/category/obzory/"
+                      >
+                        <span class="hover-flip-item"
+                          ><span data-text="Обзоры">Обзоры</span></span
+                        >
+                      </a>
+                      <a
+                        class="hover-flip-item-wrapper"
+                        href="https://i-store.by/blog/category/press-relizy/"
+                      >
+                        <span class="hover-flip-item"
+                          ><span data-text="Пресс-релизы"
+                            >Пресс-релизы</span
+                          ></span
+                        >
+                      </a>
+                </div>
+                  <h4 class="title">
+                    <a
+                      href="https://i-store.by/blog/apple-watch-series-9-i-apple-watch-ultra-2-s-novoj-funktsiej-double-tap/"
+                      >Apple Watch Series 9 и Apple Watch Ultra 2 с новой
+                      функцией Double Tap</a
+                    >
+                  </h4>
+                </div>
+                <div class="content_img">
+                    <a
+                    href="https://i-store.by/blog/prigotovtes-udivlyatsya-apple-predstavila-novye-iphone-15/"
+                  >
+                    <img
+                      width="320"
+                      height="200"
+                      src="https://i-store.by/blog/wp-content/uploads/2023/09/iPhone-15-i-Store-12-320x200.png"
+                      class="post-image"
+                      alt=""
+                      loading="lazy"
+                      srcset="
+                        https://i-store.by/blog/wp-content/uploads/2023/09/iPhone-15-i-Store-12-320x200.png 320w,
+                        https://i-store.by/blog/wp-content/uploads/2023/09/iPhone-15-i-Store-12-980x615.png 980w
+                      "
+                      sizes="(max-width: 320px) 100vw, 320px"
+                    />
+                  </a>
+                </div>
+                <div class="content_text">
+                    <div class="post-cat-list">
+                      <a
+                        class="hover-flip-item-wrapper"
+                        href="https://i-store.by/blog/category/obzory/iphone-obzory/"
+                      >
+                        <span class="hover-flip-item"
+                          ><span data-text="iPhone">iPhone</span></span
+                        >
+                      </a>
+                      <a
+                        class="hover-flip-item-wrapper"
+                        href="https://i-store.by/blog/category/press-relizy/"
+                      >
+                        <span class="hover-flip-item"
+                          ><span data-text="Пресс-релизы"
+                            >Пресс-релизы</span
+                          ></span
+                        >
+                      </a>
+                      <a
+                        class="hover-flip-item-wrapper"
+                        href="https://i-store.by/blog/category/novosti/sobytiya/"
+                      >
+                        <span class="hover-flip-item"
+                          ><span data-text="События">События</span></span
+                        >
+                      </a>
+                    </div>
+                    <h4 class="title">
+                    <a
+                      href="https://i-store.by/blog/prigotovtes-udivlyatsya-apple-predstavila-novye-iphone-15/"
+                      >Apple представила iPhone 15. Приготовьтесь удивляться!</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+    </section>
+  </body>
+</html>
+{% endblock content %}

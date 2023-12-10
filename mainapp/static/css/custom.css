@@ -1,0 +1,8 @@
+.boxed {
+    background: yellow;
+    color: white;
+    border: 3px solid black;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 10px;
+  }

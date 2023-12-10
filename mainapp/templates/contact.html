@@ -1,0 +1,100 @@
+{% extends 'mainapp/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <section class="wrapper">
+        <h2>Наши сотрудники:</h2>
+          <div class="employee_item">
+            <img src="/media/kirill.png" alt="kirill" class="employee_img">
+            <div class="employee_text">
+              <p class="employee_name">Кирилл Сайко</p>
+              <p class="employee_subname">Менеджер по продажам. Опыт работы более 10 лет</p>
+            </div>
+          </div>
+          <div class="employee_item">
+            <img src="/media/sashaparasha.png" alt="sasha" class="employee_img">
+            <div class="employee_text">
+              <p class="employee_name">Александра Пушкина</p>
+              <p class="employee_subname">Менеджер по продажам. Опыт работы более 5 лет</p>
+            </div>
+          </div>
+          <div class="employee_item">
+            <img src="/media/mashakakasha.png" alt="masha" class="employee_img">
+            <div class="employee_text">
+              <p class="employee_name">Мария Ремарк</p>
+              <p class="employee_subname">Менеджер по продажам. Опыт работы более 7 лет</p>
+            </div>
+          </div>
+    </section>
+    <section class="wrapper">
+      <div class="container">
+        <h3 class="contact-heading">Адреса магазинов:</h3>
+        <div class="block">
+          <p class="address-section">i-Store | Ленина 5</p>
+          <div class="clearfix">
+            <div class="pull-left">
+              <img
+                src="https://cdn0.it4profit.com/files/15/placeholder-filled-point-4.svg"
+                alt="geo-icon"
+              />ул. Ленина 5
+            </div>
+
+            <div class="pull-left">
+              <img
+                src="https://cdn0.it4profit.com/files/15/call-4.svg"
+                alt="phone-icon"
+              /><a href="tel:+375445555892">+375 (44) 555-58-92</a>
+            </div>
+
+            <div class="pull-left">
+              <img
+                src="https://cdn0.it4profit.com/files/15/clock-4.svg"
+                alt="time-icon"
+              />Пн – Вс: 09:00 – 21:00
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <p class="address-section"><address>i-Store | <a href="https://galleria-minsk.by/magaziny.html">ТЦ Galleria Minsk</a></address></p>
+          <div class="clearfix">
+            <div class="pull-left">
+              <img
+                src="https://cdn0.it4profit.com/files/15/placeholder-filled-point-4.svg"
+                alt="geo-icon"
+              />пр-т Победителей, 9
+            </div>
+
+            <div class="pull-left">
+              <img
+                src="https://cdn0.it4profit.com/files/15/call-4.svg"
+                alt="phone-icon"
+              /><a href="tel:+375445555892"> +375 (29) 386-78-04 </a>
+            </div>
+
+            <div class="pull-left">
+              <img
+                src="https://cdn0.it4profit.com/files/15/clock-4.svg"
+                alt="time-icon"
+              />Пн – Вс: 10:00 – 22:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+{% endblock content %}

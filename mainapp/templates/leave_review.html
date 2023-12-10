@@ -1,0 +1,124 @@
+{% extends 'mainapp/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Отзывы</title>
+</head>
+<body>
+    <div class="customer">
+        <div class="wrapper">
+            <h2>Отзывы</h2>
+            <div class="customer_content">
+                <div class="customer_item">
+                    <div class="customer_star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                    </div>
+                    <div class="customer_subtitle">
+                        <p>
+                            Отличный магазин и отличный сервис. И лучший консультант который мне встречался .
+                            Его имя Максим. Огромное спасибо за то что уделил время и все рассказал .
+                            Удачи и процветания магазину и Максиму
+                        </p>
+                    </div>
+                    <div class="customer_footer">
+                        <img src="/media/menn.png" alt="men" class="img_footer">
+                        <div class="customer_footer_text">
+                            <div class="customer_name"><p>Артемий</p></div>
+                            <div class="customer_surname"><p>Покупатель</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer_item">
+                    <div class="customer_star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                    </div>
+                    <div class="customer_subtitle">
+                        <p>
+                            Персонал отличный всегда подскажет что выбрать.
+                            Цены на iPhone лучшие в Минске. Качество отличное. Скидок много.10/10
+                        </p>
+                    </div>
+                    <div class="customer_footer">
+                        <img src="/media/menn.png" alt="men" class="img_footer">
+                        <div class="customer_footer_text">
+                            <div class="customer_name"><p>Максим</p></div>
+                            <div class="customer_surname"><p>Покупатель</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer_item">
+                    <div class="customer_star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                        <img src="/media/starr.png" alt="st" class="star">
+                    </div>
+                    <div class="customer_subtitle">
+                        <p>
+                            Внимательный персонал, помогают по всем вопросам.
+                            Особенно благодарю консультанта Данила, помог разобраться с новыми наушниками!
+                        </p>
+                    </div>
+                    <div class="customer_footer">
+                        <img src="/media/menn.png" alt="men" class="img_footer">
+                        <div class="customer_footer_text">
+                            <div class="customer_name"><p>Александр</p></div>
+                            <div class="customer_surname"><p>Покупатель</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <details class="details_form">
+                <summary  class="summary_form">Добавить отзыв</summary>
+                {% if review_submitted %}
+                <p>Ваш отзыв успешно отправлен. Спасибо!</p>
+                <a href="{% url 'mainapp:review_answer' %}">Вернуться к отзывам</a>
+            {% else %}
+                <form class="form_review" method="post" action="{% url 'mainapp:leave_review' %}">
+                    {% csrf_token %}
+                    <label for="{{ form.name.id_for_label }}">Ваше имя:</label>
+                    <input type="text" id="{{ form.name.id_for_label }}" name="{{ form.name.name }}" placeholder="Введите ваше имя" >
+
+                    <label for="{{ form.email.id_for_label }}">Ваш Email:</label>
+                    <input type="text" id="{{ form.email.id_for_label }}" name="{{ form.email.name }}" placeholder="Введите ваш Email" >
+
+                    <label for="{{ form.message.id_for_label }}">Текст отзыва:</label>
+                    <input type="text" id="{{ form.message.id_for_label }}" name="{{ form.message.name }}" placeholder="Введите текст отзыва" >
+
+                    <label for="{{ form.rating.id_for_label }}">Оценка:</label>
+                    <select id="{{ form.rating.id_for_label }}" name="{{ form.rating.name }}">
+                        {% for value, text in form.rating.field.choices %}
+                            <option value="{{ value }}" {% if form.rating.value == value %}selected{% endif %}>{{ text }}</option>
+                        {% endfor %}
+                    </select>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            {% endif %}
+            </details>
+
+        </div>
+    </div>
+</body>
+</html>
+{% endblock content %}

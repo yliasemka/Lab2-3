@@ -1,0 +1,19 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="django.db.models.fields.related.ForeignKey.*" />
+          <option value="prokat.mainapp.models.Cart.id" />
+          <option value="django.utils.functional.Promise._proxy____cast" />
+          <option value="argparse._AppendConstAction" />
+          <option value="argparse._CountAction" />
+          <option value="argparse._StoreConstAction" />
+          <option value="argparse._SubParsersAction" />
+          <option value="django.db.models.fields.PositiveIntegerField.__mul__" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

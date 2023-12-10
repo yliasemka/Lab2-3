@@ -1,0 +1,86 @@
+{% extends 'mainapp/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Вакансии</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="row-content">
+            <div class="item-content">
+              <p class="title">
+                Руководитель отдела продаж B2B
+              </p>
+              <p class="text">
+                Компания АСБК (владеет торговой маркой i-Store) расширяет
+                департамент по работе с корпоративными клиентами и приглашает в
+                команду<br />Руководителя отдела продаж B2B.
+              </p>
+              <a href="#" class="btn btn-brand-transparent">Подробнее</a>
+            </div>
+            <div class="item-image">
+              <img
+                class="item-image-img"
+                src="https://cdn0.it4profit.com/files/7/microsoftteams-image-8-new.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-content">
+            <div class="item-content">
+              <p class="title">Менеджер по продаже B2B</p>
+              <p class="text">
+                Компания АСБК (владеет торговой маркой i-Store) расширяет
+                департамент по работе с корпоративными клиентами и приглашает в
+                команду<br />Менеджера по продажам.
+              </p>
+              <a href="#" class="btn btn-brand-transparent">Подробнее</a>
+            </div>
+            <div class="item-image">
+              <img
+                class="item-image-img"
+                src="https://cdn0.it4profit.com/files/7/businessmanbusinesswoman-new.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-content">
+            <div class="item-content">
+              <p class="title">
+                Продавец-консультант техники Apple г. Минск
+              </p>
+              <p class="text">
+                "i-Store" приглашает Вас пополнить команду экспертов Apple!
+              </p>
+              <a href="#" class="btn btn-brand-transparent">Подробнее</a>
+            </div>
+            <div class="item-image">
+              <img
+                class="item-image-img"
+                src="https://cdn0.it4profit.com/files/7/vac-v-content-1-new.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% extends "mainapp/base.html" %}
+
+{% block title %}Thank you{% endblock %}
+
+{% block content %}
+       {% if review_submitted %}
+        <p>Ваш отзыв успешно отправлен. Спасибо!</p>
+        <a href="{% url 'review_answer' %}">Вернуться к отзывам</a>
+    {% else %}
+        <h1>Спасибо!</h1>
+        <p class="review_answer">Ваш отзыв успешно отправлен!</p>
+    {% endif %}
+{% endblock %}

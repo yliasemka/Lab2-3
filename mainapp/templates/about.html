@@ -1,0 +1,174 @@
+{% extends 'mainapp/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>О компании</title>
+  </head>
+  <body>
+    <section class="">
+      <div class="container">
+          <h2 class="about-section-title">О магазине:</h2>
+          <h2>
+            i-Store (айСтор) – официальный партнёр компании Apple в Беларуси.
+          </h2>
+
+          <dl>
+            <dt>i-Store</dt>
+            <dd>Официальный партнёр компании Apple в Беларуси</dd>
+          </dl>
+
+          <p>
+            В наших магазинах можно не только купить iPhone, компьютер Mac или
+            планшет iPad, а также другую технику Apple и аксессуары для неё.
+            i-Store – это прежде всего место, пропитанное атмосферой Apple, в
+            котором вам помогут с выбором техники, научат ей пользоваться, дадут
+            советы по эксплуатации ваших гаджетов и предложат качественные
+            аксессуары.
+          </p>
+          <p>
+            В i-Store можно поработать с любым Mac, iPhone или с iPad,
+            посмотреть демонстрации недавно появившихся в продаже продуктов
+            Apple или принять участие в тренингах, мастер-классах и
+            мероприятиях, посвящённых новейшим технологиям. Просто спросите, и
+            мы подберем подходящий курс для вас. Мы знаем о продуктах Apple всё.
+            И мы готовы поделиться знаниями.
+          </p>
+          <p>
+            Наши продавцы — настоящие эксперты в своей области. А качественная,
+            удобная, простая в использовании техника Apple доставляет
+            удовольствие своим пользователям и практически не требует
+            технической поддержки
+          </p>
+          <p>Наши магазины:</p>
+          <p>
+            <strong>Ленина, 5</strong> |
+            <a href="tel:+375445555892" style="color: black"
+              >+375 (44) 555-58-92</a
+            ><br />Пн – Вс: 09:00 – 21:00<br />Для посетителей магазина работает
+            бесплатная парковка. Чтобы ей воспользоваться - позвоните, вам
+            откроют въезд.
+          </p>
+          <p>
+            <strong>Galleria Minsk</strong> пр-т Победителей, 9 |
+            <a href="+375293867804" style="color: black">+375 (29) 386-78-04</a>
+            <br /> <time datetime="10:00+4:0">Пн – Вс: 10:00</time>
+            <time datetime="22:00+4:0">- 22:00</time>
+          </p>
+          <p>
+            В нашем магазине вы всегда купите все, что вам нужно.
+          </p>
+        </div>
+            <div class="benefit-container">
+              <div class="benefit-item">
+                <img
+                  src="https://cdn0.it4profit.com/files/15/benefit-1.svg"
+                  alt="benefit-1-icon"
+                  class="img_benefit"
+                />
+                <p class="benefit-title">Первичная настройка.</p>
+                <p class="benefit-description">
+                  Мы объясним, как подготовить ваше новое устройство к работе.
+                  Поможем активировать его, выбрать язык, настроить защиту. А
+                  также подключить девайс к сервисам Apple – это делается сразу
+                  после первого включения.Пример текста в виде четверостишия с фиксированным и потенциальным переводом строки
+                </p>
+              </div>
+              <div class="benefit-item">
+                <img
+                  src="https://cdn0.it4profit.com/files/15/benefit-2.svg"
+                  alt="benefit-2-icon"
+                  class="img_benefit"
+                />
+                <p class="benefit-title">Большой выбор аксессуаров</p>
+                <p class="benefit-description">
+                  для защиты ваших устройств: чехлы, защитные стекла, обложки,
+                  сумки. А также периферийные устройства, которые идеально
+                  совместимы с техникой Apple: стилусы, клавиатуры, мыши,
+                  наушники, акустика, и многое другое.
+                </p>
+              </div>
+              <div class="benefit-item">
+                <img
+                  src="https://cdn0.it4profit.com/files/15/benefit-3.svg"
+                  alt="benefit-3-icon"
+                  class="img_benefit"
+                />
+                <p class="benefit-title">Сервисное обслуживание.</p>
+                <p class="benefit-description">
+                  Наши специалисты помогут подготовить ваш новый девайс к работе
+                  еще до выхода из магазина. Наклеят защитное стекло, подберут
+                  аксессуары. При необходимости – установят программы и
+                  перенесут данные.
+                </p>
+              </div>
+              <div class="benefit-item">
+                <img
+                  src="https://cdn0.it4profit.com/files/15/benefit-4.svg"
+                  alt="benefit-4-icon"
+                  class="img_benefit"
+                />
+                <p class="benefit-title">Персональное обучение.</p>
+                <p class="benefit-description">
+                  Это индивидуальный тренинг, на котором вы с нуля научитесь
+                  пользоваться вашим новым гаджетом. Наш сотрудник расскажет,
+                  какие приложения будут вам полезны. И покажет, какие
+                  возможности открывает экосистема Apple.
+                </p>
+              </div>
+              <div class="benefit-item">
+                <img
+                  src="https://cdn0.it4profit.com/files/15/benefit-5.svg"
+                  alt="benefit-5-icon"
+                  class="img_benefit"
+                />
+                <p class="benefit-title">Trade-in.</p>
+                <p class="benefit-description">
+                  Это система, по которой мы возьмем в зачет ваши старые
+                  устройства Apple при покупке новой техники. Сдаете несколько
+                  девайсов? Их стоимость суммируется, а оставшуюся часть вы
+                  можете доплатить сразу или оформить в рассрочку, кредит.
+                </p>
+              </div>
+              <div class="benefit-item">
+                <img
+                  src="https://cdn0.it4profit.com/files/15/benefit-6.svg"
+                  alt="benefit-6-icon"
+                  class="img_benefit"
+                />
+                <p class="benefit-title">Удобные варианты оплаты.</p>
+                <p class="benefit-description">
+                  У нас вы можете купить технику по карте или за наличные
+                  деньги. А также оформить рассрочку или кредит на срок от 2 до
+                  48 месяцев. Мы принимаем карты «Халва», «Черепаха», «КартаFun»
+                  и «Карта покупок».
+                </p>
+              </div>
+              <div class="benefit-item">
+                <img
+                  src="https://cdn0.it4profit.com/files/15/benefit-7.svg"
+                  alt="benefit-7-icon"
+                  class="img_benefit"
+                />
+                <p class="benefit-title">Доставка по всей стране.</p>
+                <p class="benefit-description">
+                  Мы доставим новое устройство вам или вашим близким, где бы вы
+                  ни находились. Долго ждать не придется: отправка
+                  осуществляется на следующий день после оплаты. Ее стоимость
+                  формируется автоматически в момент оформления заказа.
+                </p>
+              </div>
+            </div>
+    </section>
+  </body>
+</html>
+{% endblock content %}

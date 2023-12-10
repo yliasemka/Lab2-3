@@ -1,0 +1,141 @@
+{% extends "mainapp/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<section>
+  <h2>Таблицы</h2>
+  <div>
+    <h2>Таблицы</h2>
+  </div>
+</section>
+<div dir="rtl" class="teststar">
+   <a href="#" class="starrr">★</a>
+   <a href="#" class="starrr">★</a>
+   <a href="#" class="starrr">★</a>
+   <a href="#" class="starrr">★</a>
+   <a href="#" class="starrr">★</a>
+</div>
+
+<blockquote class="blockquote-en">This is an English quote.</blockquote>
+<blockquote class="blockquote-ru">Это русская цитата.</blockquote>
+<form class="test_form">
+  <fieldset>
+    <label>
+      Имя пользователя
+      <input type="text" name="username"  disabled>
+    </label>
+    <label>Принимаются значения между 1 и 10.
+      <ul>
+      <li>
+        <input id="value1" name="value1" type="number" placeholder="1 to 10" min="1" max="10" value="12">
+        <label for="value1">Your value is </label>
+      </li>
+      </ul>
+    </label>
+    <label>
+      Email
+      <input type="email" name="email-address" required>
+    </label>
+     <input class="test_input" type="submit" name="submit">
+  </fieldset>
+</form>
+<p class="test_text">Изменять стиль при выделении текста</p>
+<p class="first_letter"> Выделить первую букву (или строку) текста абзаца в статье</p>
+<p class="test_content">Добавить контекст в начале и конце фрагмента текста</p>
+<ul class="test_list">
+    <li class="test_item">один из списков</li>
+    <li class="test_item">оформить маркерами</li>
+    <li class="test_item">символами юникода</li>
+</ul>
+<p class="test_kap">этот текст будет отображен с капителями</p>
+<p class="article-preview">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
+    nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+    Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit
+    lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<table>
+  <tr>
+    <th colspan="2">Animals</th>
+  </tr>
+  <tr>
+    <th colspan="2">Hippopotamus</th>
+  </tr>
+  <tr>
+    <th rowspan="2">Horse</th>
+    <td>Mare</td>
+  </tr>
+  <tr>
+    <td>Stallion</td>
+  </tr>
+  <tr>
+    <th colspan="2">Crocodile</th>
+  </tr>
+  <tr>
+    <th rowspan="2">Chicken</th>
+    <td>Cock</td>
+  </tr>
+  <tr>
+    <td>Rooster</td>
+  </tr>
+</table>
+
+<table>
+      <colgroup>
+        <col span="2">
+        <col style="background-color:#97DB9A;">
+        <col style="width:42px;">
+        <col style="background-color:#97DB9A;">
+        <col style="background-color:#DCC48E; border:4px solid #C1437A;">
+        <col span="2" style="width:42px;">
+      </colgroup>
+      <tr>
+        <td>&nbsp;</td>
+        <th>Mon</th>
+        <th>Tues</th>
+        <th>Wed</th>
+        <th>Thurs</th>
+        <th>Fri</th>
+        <th>Sat</th>
+        <th>Sun</th>
+      </tr>
+      <tr>
+        <th>1st period</th>
+        <td>English</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>German</td>
+        <td>Dutch</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>2nd period</th>
+        <td>English</td>
+        <td>English</td>
+        <td>&nbsp;</td>
+        <td>German</td>
+        <td>Dutch</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>3rd period</th>
+        <td>&nbsp;</td>
+        <td>German</td>
+        <td>&nbsp;</td>
+        <td>German</td>
+        <td>Dutch</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>4th period</th>
+        <td>&nbsp;</td>
+        <td>English</td>
+        <td>&nbsp;</td>
+        <td>English</td>
+        <td>Dutch</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+{% endblock %}
